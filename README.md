@@ -1,1 +1,1 @@
-# Egolingo
+# My duolingo analogue

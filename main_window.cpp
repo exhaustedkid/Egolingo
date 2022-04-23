@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget* parent) {
   settings_window_ = new SettingsWindow();
   exit_context_menu_ = new ExitContextMenu();
   pick_an_option_window_ = new PickAnOptionWindow();
+  input_answer_window_ = new WindowInputAnswer();
 
   flag_ = new QLabel(central_widget);
   owl_ = new QLabel(central_widget);
@@ -51,6 +52,9 @@ MainWindow::MainWindow(QWidget* parent) {
 void MainWindow::ConnectWidgets() {
   connect(pick_an_option_button_, &QPushButton::pressed, this, [&]{
     pick_an_option_window_->show();
+  });
+  connect(input_answer_button_, &QPushButton::pressed, this, [&]{
+    input_answer_window_->show();
   });
   connect(settings_button_, &QPushButton::pressed, this, [&]{
     settings_window_->show();

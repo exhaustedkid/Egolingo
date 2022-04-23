@@ -1,7 +1,3 @@
-#include <QWidget>
-#include <QLabel>
-#include <QGridLayout>
-
 #include "abstract_view.h"
 
 #ifndef EGOLINGO__WINDOW_PICK_AN_OPTION_H_
@@ -19,7 +15,7 @@ class PickAnOptionWindow : public AbstractWindow {
   void ConnectLevelFeatures();
 
   int GetTotalScore();
-  QPushButton* next_level_; //
+
   signals:
 //  void ScoreChanged();
 
@@ -38,13 +34,14 @@ class PickAnOptionWindow : public AbstractWindow {
   QPushButton* second_answer_;
   QPushButton* third_answer_;
   QPushButton* fourth_answer_;
-  QPushButton* check_answer_;
-  QPushButton* skip_level_;
+//  QPushButton* check_answer_;
+//  QPushButton* skip_level_;
+
 //  QPushButton* next_level_;
-  QLabel* task_number_;
-  QLabel* statement_;
-  QLabel* sentence_;
-  QLabel* empty_label_;
+//  QLabel* task_number_;
+//  QLabel* statement_;
+//  QLabel* sentence_;
+//  QLabel* empty_label_;
 
   int tasks_solved_ = 0;
   int tasks_count = 5;

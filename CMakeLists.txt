@@ -24,6 +24,7 @@ add_executable(Egolingo
         resourses.qrc
         settings_window.cpp
         exit_context_menu.cpp
+        window_input_answer.cpp
         )
 
 target_link_libraries(Egolingo

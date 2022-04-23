@@ -8,9 +8,9 @@
 #include <QLabel>
 
 #include "window_pick_an_option.h"
-//#include "controller.h"
 #include "settings_window.h"
 #include "exit_context_menu.h"
+#include "window_input_answer.h"
 
 class MainWindow : public QMainWindow
 {
@@ -30,6 +30,8 @@ class MainWindow : public QMainWindow
 
   SettingsWindow* settings_window_;
   ExitContextMenu* exit_context_menu_;
+
+  WindowInputAnswer* input_answer_window_;
   PickAnOptionWindow* pick_an_option_window_;
 
   QLabel* flag_;

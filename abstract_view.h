@@ -3,6 +3,8 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QProgressBar>
+#include <QLabel>
+#include <QGridLayout>
 
 class AbstractWindow : public QWidget {
   Q_OBJECT
@@ -10,9 +12,15 @@ class AbstractWindow : public QWidget {
  public:
   AbstractWindow();
 
-//  virtual void LoadNextLevel();
-
   QProgressBar* progress_bar_;
+  QPushButton* check_answer_;
+  QPushButton* skip_level_;
+  QPushButton* next_level_;
+  QLabel* task_number_;
+  QLabel* statement_;
+  QLabel* sentence_;
+  QLabel* empty_label_;
+
 
  private:
 

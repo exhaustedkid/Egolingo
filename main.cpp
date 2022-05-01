@@ -1,0 +1,14 @@
+#include <QApplication>
+#include <QPushButton>
+
+#include "main_window.h"
+
+int main(int argc, char* argv[]) {
+  QApplication app(argc, argv);
+
+  MainWindow window;
+  window.setWindowIcon(QIcon("../resourses/duolingo-bird.png"));
+  window.show();
+
+  return QApplication::exec();
+}

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource>
+        <file>resourses/duolingo-bird.png</file>
+        <file>resourses/flag.jpg</file>
+        <file>resourses/shesterny.png</file>
+        <file>resourses/exit.png</file>
+        <file>resourses/cross.png</file>
+        <file>resourses/pick_an_option_tasks.txt</file>
+        <file>resourses/input_answer_tasks.txt</file>
+    </qresource>
+</RCC>
+
